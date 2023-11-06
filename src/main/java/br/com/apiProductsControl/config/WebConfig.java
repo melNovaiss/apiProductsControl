@@ -14,8 +14,8 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins("http://localhost:8081")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
-                .exposedHeaders("Content-Type", "Authorization") // Adicione os cabeçalhos que deseja expor
-                .allowCredentials(true); // Se você estiver usando credenciais (como cookies)
+                .exposedHeaders("Content-Type", "Authorization")
+                .allowCredentials(true);
     }
 }
 
